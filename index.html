@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fafaf8" />
+    <meta
+      name="description"
+      content="Yifei Jiang is an algorithm researcher working on generative models, deep learning, and machine learning across scientific domains."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jyfei6.github.io/" />
+    <meta property="og:title" content="Yifei Jiang — Algorithm Researcher" />
+    <meta
+      property="og:description"
+      content="Generative models and machine learning across scientific domains."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Yifei Jiang — Algorithm Researcher" />
+    <meta
+      name="twitter:description"
+      content="Generative models and machine learning across scientific domains."
+    />
+    <title>Yifei Jiang — Algorithm Researcher</title>
+    <link rel="canonical" href="https://jyfei6.github.io/" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme =
+          savedTheme === "dark" || savedTheme === "light"
+            ? savedTheme
+            : prefersDark
+              ? "dark"
+              : "light";
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Yifei Jiang",
+        "email": "mailto:jyfei@umich.edu",
+        "jobTitle": "Algorithm Researcher",
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Michigan"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Shanghai Jiao Tong University"
+          }
+        ],
+        "knowsAbout": [
+          "Generative modeling",
+          "Deep learning",
+          "Machine learning for science",
+          "Neural computation",
+          "Graph neural networks",
+          "Computational genomics"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
