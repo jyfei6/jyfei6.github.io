@@ -284,6 +284,9 @@ function App() {
             <a href="#presentations">Presentations</a>
             <a href="#teaching">Teaching</a>
             <a href="#contact">Contact</a>
+            <a href="./Yifei_CV.pdf" target="_blank" rel="noreferrer">
+              CV ↗
+            </a>
             <ThemeToggle
               theme={theme}
               onToggle={() =>
