@@ -183,7 +183,8 @@ h1 a:hover {
   max-width: 205px;
 }
 
-.email-link {
+.email-link,
+.cv-link {
   display: inline-block;
   margin-top: 8px;
   padding-bottom: 1px;
@@ -194,7 +195,14 @@ h1 a:hover {
   overflow-wrap: anywhere;
 }
 
-.email-link:hover {
+.cv-link {
+  width: max-content;
+  display: block;
+  margin-top: 7px;
+}
+
+.email-link:hover,
+.cv-link:hover {
   color: var(--link-hover);
   border-bottom-color: currentColor;
 }
@@ -1018,7 +1026,8 @@ footer a {
 
   .availability,
   .location,
-  .email-link {
+  .email-link,
+  .cv-link {
     font-size: 11px;
   }
 }

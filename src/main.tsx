@@ -270,6 +270,14 @@ function App() {
             <a className="email-link" href="mailto:jyfei@umich.edu">
               jyfei@umich.edu
             </a>
+            <a
+              className="cv-link"
+              href="./Yifei_CV.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              CV ↗
+            </a>
           </div>
         </aside>
 
