@@ -4,14 +4,17 @@ import "./styles.css";
 
 type Theme = "light" | "dark";
 
+const cvHref = "./Yifei_Jiang_CV.pdf";
+
 const researchProjects = [
   {
     meta: "Neural generative modeling · 2026",
     title: "Image2MUA",
     description:
-      "An image-conditioned generative model for multi-unit activity in visual cortex, using visual-expert routing and rectified flow matching.",
-    result: "Achieved state-of-the-art performance on the macaque TVSD dataset.",
-    status: "Manuscript under review",
+      "The first image-conditioned generative model of multi-unit activity in macaque visual cortex, combining an attention-based mixture of visual encoders, sparse MoE routing, and rectified flow matching.",
+    result:
+      "Achieved state-of-the-art accuracy of 0.87 on the macaque TVSD dataset.",
+    status: "Submitted to ICLR 2027",
   },
   {
     meta: "Computational immunology · 2023–2026",
@@ -29,7 +32,7 @@ const researchProjects = [
     description:
       "A CNN–Transformer architecture with attention and adaptive skip connections for anterior bladder wall segmentation in noisy ultrasound images.",
     result:
-      "Achieved state-of-the-art performance for anterior bladder wall segmentation.",
+      "Achieved a state-of-the-art Dice score of 0.82, supporting noninvasive bladder pressure assessment.",
     status: "IEEE JBHI · 2026",
     link: "https://doi.org/10.1109/JBHI.2026.3675965",
   },
@@ -37,9 +40,9 @@ const researchProjects = [
     meta: "AI for science · 2025",
     title: "Property-guided catalyst generation",
     description:
-      "A GNN-based diffusion model fine-tuned with LoRA and GRPO for target-specific catalyst generation.",
+      "A property-conditioned diffusion model with a GNN denoiser, LoRA, and GRPO for generating task-specific catalysts from target physical and chemical properties.",
     result:
-      "Implemented property-conditioned fine-tuning by injecting target physical and chemical properties into the generation process.",
+      "Reached 19.53% condition satisfaction while approaching fully fine-tuned SOTA performance; versus full-model training, improved efficiency 3×, cut compute cost by approximately 70%, and reduced GPU memory use to 30%.",
     status: "Undergraduate thesis",
   },
   {
@@ -59,7 +62,7 @@ const researchExperience = [
     organization: "SiClink",
     role: "Algorithm Engineer · Shanghai, China",
     description:
-      "A brain–computer interface startup where I develop image-conditioned generative models of multi-unit activity using visual-expert routing and rectified flow matching.",
+      "Lead development of Image2MUA at a brain–computer interface startup, using an attention-based mixture of visual encoders, sparse MoE routing, and rectified flow matching to generate macaque visual-cortical MUA from images.",
   },
   {
     dates: "2023–2026",
@@ -73,7 +76,7 @@ const researchExperience = [
     organization: "Mayo Clinic",
     role: "nuSURF Research Intern · Rochester, Minnesota, United States",
     description:
-      "Developed and evaluated deep learning models for anterior bladder wall segmentation in noisy ultrasound images.",
+      "Led architecture design, evaluation, and hyperparameter tuning for BWS-Net, achieving a Dice score of 0.82 for anterior bladder wall segmentation in low-contrast, noisy ultrasound.",
   },
   {
     dates: "2022–2023",
@@ -91,7 +94,7 @@ const publications = [
     title:
       "Image2MUA: Image-Conditioned Generative Modeling of MUA with Visual-Expert Routing",
     authors: "Yifei Jiang, M. Xu, S. Ma, and F. He",
-    note: "Under review",
+    note: "Submitted to ICLR 2027",
   },
   {
     year: "2026",
@@ -149,14 +152,14 @@ const presentations = [
   {
     year: "2026",
     conference: "BMES Annual Meeting",
-    format: "Oral presentation · Orlando, Florida, United States",
+    format: "Forthcoming oral presentation · Orlando, Florida, United States",
     title:
       "Immune Biomarkers of Islet Transplant Rejection Revealed by Synthetic Immunological Niche",
   },
   {
     year: "2026",
     conference: "BMES Annual Meeting",
-    format: "Oral presentation · Orlando, Florida, United States",
+    format: "Forthcoming oral presentation · Orlando, Florida, United States",
     title:
       "Synthetic Immunological Niche Reveals Early Immune Dysregulation and Stratifies Therapeutic Response in Type 1 Diabetes",
   },
@@ -272,7 +275,7 @@ function App() {
             </a>
             <a
               className="cv-link"
-              href="./Yifei_CV.pdf"
+              href={cvHref}
               target="_blank"
               rel="noreferrer"
             >
@@ -292,7 +295,7 @@ function App() {
             <a href="#presentations">Presentations</a>
             <a href="#teaching">Teaching</a>
             <a href="#contact">Contact</a>
-            <a href="./Yifei_CV.pdf" target="_blank" rel="noreferrer">
+            <a href={cvHref} target="_blank" rel="noreferrer">
               CV ↗
             </a>
             <ThemeToggle
@@ -306,8 +309,8 @@ function App() {
           <section className="hero" aria-label="About Yifei Jiang">
             <div className="intro-copy">
               <p>
-                I am an algorithm engineer and researcher with a double major
-                in Electrical and Computer Engineering and Biomedical
+                I am an algorithm engineer and researcher with undergraduate
+                degrees in Electrical and Computer Engineering and Biomedical
                 Engineering. I hold a Bachelor of Engineering from Shanghai
                 Jiao Tong University and a Bachelor of Science in Engineering
                 from the University of Michigan.
@@ -545,7 +548,7 @@ function App() {
 
           <footer>
             <span>© 2026 Yifei Jiang</span>
-            <span>Updated August 2026</span>
+            <span>Updated September 2026</span>
             <a href="#top">Back to top</a>
           </footer>
         </main>

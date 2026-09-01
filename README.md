@@ -7,6 +7,7 @@ site and configured for GitHub Pages.
 
 - Main copy and structured content: src/main.tsx
 - Visual design and responsive behavior: src/styles.css
+- CV LaTeX source: cv/
 - Profile photo and other public files: public/
 
 ## Run locally

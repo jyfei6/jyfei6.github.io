@@ -1,0 +1,172 @@
+% !TEX program = xelatex
+
+\documentclass{chicv}
+\pagenumbering{gobble}
+
+\begin{document}
+
+\name{Yifei Jiang}
+\begin{basicinfo}
+  \info{\email{jyfei@umich.edu}}
+  \info{\homepage{jyfei6.github.io}[https://jyfei6.github.io]}
+\end{basicinfo}
+
+\section{Research Interests}
+Generative modeling, deep learning, neural computation, and machine learning for science,
+with applications to brain--computer interfaces, computational biology, and medical imaging.
+
+\section{Education}
+\cventry{University of Michigan}{2023 -- 2026}
+  [Bachelor of Science in Engineering in Biomedical Engineering]
+  [Ann Arbor, Michigan, United States]
+  \begin{itemize}
+    \item GPA: 3.84/4.00.
+  \end{itemize}
+
+\cventry{Shanghai Jiao Tong University}{2021 -- 2026}
+  [Bachelor of Engineering in Electrical and Computer Engineering]
+  [Shanghai, China]
+  \begin{itemize}
+    \item GPA: 3.65/4.00; rank: 56/230.
+  \end{itemize}
+
+\section{Research and Engineering Experience}
+\cventry{SiClink}{2026 -- Present}
+  [Algorithm Engineer]
+  [Shanghai, China]
+  \begin{itemize}
+    \item Lead development of Image2MUA, the field's first image-conditioned generative model
+      of multi-unit activity (MUA) in macaque visual cortex.
+    \item Integrated an attention-based mixture of visual encoders, sparse MoE routing, and
+      rectified flow matching; achieved state-of-the-art accuracy of 0.87 on the macaque TVSD
+      dataset; first-author manuscript submitted to ICLR 2027.
+  \end{itemize}
+
+\cventry{University of Michigan}{2023 -- 2026}
+  [Research Assistant, Computational Immunology]
+  [Ann Arbor, Michigan, United States]
+  \begin{itemize}
+    \item Developed a cross-batch transcriptomic pipeline combining PLS-DA feature selection,
+      support vector machines, and 1,000 bootstrap resamples for early identification of type 1
+      diabetes progressors.
+    \item Achieved 89\% prediction accuracy under the study's bootstrap evaluation protocol; the
+      predictions were used in downstream analyses of early pancreatic immune dysregulation. The
+      work was released as a bioRxiv preprint and is under minor revision at the
+      \textit{Journal of Clinical Investigation}.
+  \end{itemize}
+
+\cventry{Mayo Clinic}{Summer 2024}
+  [nuSURF Research Intern, Medical Computer Vision]
+  [Rochester, Minnesota, United States]
+  \begin{itemize}
+    \item Led architecture design, evaluation, and hyperparameter tuning for BWS-Net, a
+      CNN-Transformer network with attention and adaptive skip connections for anterior bladder
+      wall segmentation in low-contrast, noisy ultrasound.
+    \item Achieved a state-of-the-art Dice score of 0.82, advancing noninvasive bladder pressure
+      assessment; published in \textit{IEEE Journal of Biomedical and Health Informatics}
+      (impact factor: 7.0).
+  \end{itemize}
+
+\cventry{Beijing Genomics Institute (BGI)}{2022 -- 2023}
+  [Research Assistant, Computational Genomics]
+  [Beijing, China]
+  \begin{itemize}
+    \item Analyzed single-cell RNA-seq, bulk RNA-seq, and spatial transcriptomic data from
+      medulloblastoma cohorts for biomarker and survival studies.
+    \item Conducted enrichment analysis, Cox regression, and cell annotation, contributing to
+      published studies of tumor heterogeneity, cellular plasticity, and the immune microenvironment.
+  \end{itemize}
+
+\section{Selected Research Project}
+\cventry{Property-Guided Catalyst Generation}{2025}
+  [Undergraduate Thesis]
+  []
+  \begin{itemize}
+    \item Built a property-conditioned diffusion model with a GNN denoiser, LoRA, and GRPO to
+      generate task-specific catalysts from specified physical and chemical properties.
+    \item Reached a 19.53\% condition-satisfaction rate, approaching fully fine-tuned SOTA
+      performance; versus full-model training, improved efficiency 3$\times$, cut compute cost by
+      approximately 70\%, and reduced GPU memory use to 30\%.
+  \end{itemize}
+
+\newpage
+\section{Publications}
+\vspace{3pt}
+\textbf{Preprints and Manuscripts}
+\begin{itemize}
+  \item \textbf{Yifei Jiang}, M. Xu, S. Ma, and F. He. ``Image2MUA: Image-Conditioned
+    Generative Modeling of MUA with Visual-Expert Routing.'' Manuscript under review, 2026.
+  \item J. Roy, \textbf{Yifei Jiang}, et al. ``Synthetic Immunological Niche Reveals Early
+    Immune Dysregulation and Stratifies Therapeutic Response in Type 1 Diabetes.''
+    \textit{bioRxiv}, 2026; under minor revision at the \textit{Journal of Clinical Investigation}.
+    \href{https://doi.org/10.64898/2026.03.06.710219}{[DOI]}
+  \item D. Han, Z. Jia, Z. Wang, \ldots, \textbf{Yifei Jiang}, \ldots, and T. Jiang.
+    ``An Immune Microenvironment-Associated Gene Signature Predicts Outcomes and Therapeutic
+    Response in Pediatric Medulloblastoma.'' \textit{Research Square}, 2024.
+    \href{https://doi.org/10.21203/rs.3.rs-2723037/v3}{[DOI]}
+\end{itemize}
+
+\textbf{Peer-reviewed Articles}
+\begin{itemize}
+  \item M. Saini, \textbf{Yifei Jiang}, et al. ``BWS-Net: An Optimal Deep Learning Architecture
+    for the Anterior Bladder Wall Segmentation Using Ultrasound Imaging.''
+    \textit{IEEE Journal of Biomedical and Health Informatics}, 2026.
+    \href{https://doi.org/10.1109/JBHI.2026.3675965}{[DOI]}
+  \item J. Li, H. Liu, Z. Wang, \ldots, \textbf{Yifei Jiang}, \ldots, and T. Jiang.
+    ``Unveiling Spatial Heterogeneity in Medulloblastoma: A Multi-Omics Analysis of Cellular State
+    and Geographical Organization.'' \textit{Neuro-Oncology}, 27(6):1611--1627, 2025.
+    \href{https://doi.org/10.1093/neuonc/noaf020}{[DOI]}
+  \item H. Liu, J. Zhang, Z. Wang, \ldots, \textbf{Yifei Jiang}, \ldots, and T. Jiang.
+    ``High Cellular Plasticity State of Medulloblastoma Local Recurrence and Distant Dissemination.''
+    \textit{Cell Reports Medicine}, 6(1):101914, 2025.
+    \href{https://doi.org/10.1016/j.xcrm.2024.101914}{[DOI]}
+  \item J. Gao, Y. Zhao, Z. Wang, \ldots, \textbf{Yifei Jiang}, \ldots, and T. Jiang.
+    ``Single-Cell Transcriptomic Sequencing Identifies Subcutaneous Patient-Derived Xenograft
+    Recapitulated Medulloblastoma.'' \textit{Animal Models and Experimental Medicine}, 8:458--472,
+    2025.
+    \href{https://doi.org/10.1002/ame2.12399}{[DOI]}
+\end{itemize}
+
+\section{Conference Presentations}
+\vspace{3pt}
+\begin{itemize}
+  \item ``Immune Biomarkers of Islet Transplant Rejection Revealed by Synthetic Immunological
+    Niche.'' Forthcoming oral presentation, BMES Annual Meeting, Orlando, Florida, 2026.
+  \item ``Synthetic Immunological Niche Reveals Early Immune Dysregulation and Stratifies
+    Therapeutic Response in Type 1 Diabetes.'' Forthcoming oral presentation, BMES Annual Meeting,
+    Orlando, Florida, 2026.
+  \item ``Machine Learning-Based Early Prediction of Type 1 Diabetes from Immunological Niche
+    Gene Signatures.'' Oral presentation, TERMIS-Americas Annual Conference and Exhibition,
+    Detroit, Michigan, 2025.
+  \item ``Deep Learning for Anterior Bladder Wall Segmentation in Ultrasound Images.'' Poster
+    presentation, KUH Summer Undergraduate Research Symposium, Charlottesville, Virginia, 2024.
+\end{itemize}
+
+\section{Honors and Awards}
+\vspace{3pt}
+\begin{itemize}
+  \item James B. Angell Scholar, University of Michigan, 2025.
+  \item University Honors, University of Michigan, 2023 -- 2025.
+  \item Dean's List, University of Michigan, 2023 -- 2024.
+  \item Honorable Mention, Interdisciplinary Contest in Modeling, 2022.
+\end{itemize}
+
+\section{Teaching Experience}
+\cventry{Shanghai Jiao Tong University}{2022 -- 2023}
+  [Teaching Assistant, General Chemistry]
+  [Shanghai, China]
+  \begin{itemize}
+    \item Led discussion and problem-solving sessions for 30 students, designed and graded weekly
+      assignments, and assisted with assessments for a course of approximately 200 students.
+  \end{itemize}
+
+\section{Technical Skills}
+\vspace{3pt}
+\begin{itemize}
+  \item \textbf{Programming:} Python, R, C/C++, MATLAB.
+  \item \textbf{Machine Learning:} PyTorch, scikit-learn; generative models,
+    diffusion and flow-matching methods
+  \item \textbf{Additional Tools:} Mathematica, Verilog, Arduino.
+\end{itemize}
+
+\end{document}
