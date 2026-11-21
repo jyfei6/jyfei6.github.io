@@ -11,9 +11,9 @@ const researchProjects = [
     meta: "Neural generative modeling · 2026",
     title: "Image2MUA",
     description:
-      "The first image-conditioned generative model of multi-unit activity in macaque visual cortex, combining an attention-based mixture of visual encoders, sparse MoE routing, and rectified flow matching.",
+      "An image-conditioned generative model of multi-unit activity in macaque visual cortex, combining an attention-based mixture of visual encoders, sparse MoE routing, and rectified flow matching.",
     result:
-      "Achieved state-of-the-art accuracy of 0.87 on the macaque TVSD dataset.",
+      "First-author research on generative modeling of visual-cortical neural responses.",
     status: "Submitted to ICLR 2027",
   },
   {
@@ -22,9 +22,9 @@ const researchProjects = [
     description:
       "A cross-batch transcriptomic pipeline using PLS-DA feature selection, support vector machines, and 1,000 bootstrap resamples for early identification of type 1 diabetes progressors.",
     result:
-      "Achieved 89% prediction accuracy; the predictions were used in downstream analyses of early pancreatic immune dysregulation.",
-    status: "Preprint · JCI minor revision",
-    link: "https://doi.org/10.64898/2026.03.06.710219",
+      "Achieved 89% prediction accuracy under the study's bootstrap evaluation protocol; the predictions were used in downstream analyses of early pancreatic immune dysregulation.",
+    status: "Journal of Clinical Investigation · 2026",
+    link: "https://doi.org/10.1172/JCI206433",
   },
   {
     meta: "Medical computer vision · 2024",
@@ -62,14 +62,14 @@ const researchExperience = [
     organization: "SiClink",
     role: "Algorithm Engineer · Shanghai, China",
     description:
-      "Lead development of Image2MUA at a brain–computer interface startup, using an attention-based mixture of visual encoders, sparse MoE routing, and rectified flow matching to generate macaque visual-cortical MUA from images.",
+      "Analyze neural signals recorded with flexible electrodes for invasive brain–computer interfaces. Lead visual-cortex experiments in mice and macaques, jointly modeling multichannel neural recordings to reconstruct visual stimuli and encode visual inputs into electrical stimulation patterns.",
   },
   {
     dates: "2023–2026",
     organization: "University of Michigan",
     role: "Research Assistant · Ann Arbor, Michigan, United States",
     description:
-      "Developed machine-learning and transcriptomic pipelines for early prediction of type 1 diabetes and downstream analysis of immune dysregulation.",
+      "Developed machine-learning and transcriptomic pipelines for early prediction of type 1 diabetes and downstream analysis of immune dysregulation. This work was published in the Journal of Clinical Investigation.",
   },
   {
     dates: "Summer 2024",
@@ -106,12 +106,19 @@ const publications = [
   },
   {
     year: "2026",
-    venue: "bioRxiv",
+    venue: "Journal of Clinical Investigation",
     title:
       "Synthetic Immunological Niche Reveals Early Immune Dysregulation and Stratifies Therapeutic Response in Type 1 Diabetes",
     authors: "J. Roy, Yifei Jiang, et al.",
-    note: "Preprint; JCI minor revision",
-    href: "https://doi.org/10.64898/2026.03.06.710219",
+    href: "https://doi.org/10.1172/JCI206433",
+  },
+  {
+    year: "2026",
+    venue: "Advanced Science",
+    title:
+      "Immune Biomarkers of Islet Transplant Rejection Revealed by Synthetic Immunological Niche",
+    authors: "J. Roy, A. J. Nejma, M. Tarique, A. Talekar, S. Wu, B. Ha, Yifei Jiang, E. S. Yolcu, and L. D. Shea",
+    href: "https://doi.org/10.1002/advs.78154",
   },
   {
     year: "2025",
@@ -150,18 +157,11 @@ const publications = [
 
 const presentations = [
   {
-    year: "2026",
-    conference: "BMES Annual Meeting",
-    format: "Forthcoming oral presentation · Orlando, Florida, United States",
+    year: "2025–2026",
+    conference: "BMES Annual Meetings",
+    format: "Two oral presentations (co-author) · San Diego, California (2025); Orlando, Florida (2026)",
     title:
-      "Immune Biomarkers of Islet Transplant Rejection Revealed by Synthetic Immunological Niche",
-  },
-  {
-    year: "2026",
-    conference: "BMES Annual Meeting",
-    format: "Forthcoming oral presentation · Orlando, Florida, United States",
-    title:
-      "Synthetic Immunological Niche Reveals Early Immune Dysregulation and Stratifies Therapeutic Response in Type 1 Diabetes",
+      "Synthetic immunological niches in type 1 diabetes and islet transplantation",
   },
   {
     year: "2025",
@@ -186,7 +186,7 @@ const teachingExperience = [
     organization: "Shanghai Jiao Tong University",
     role: "Teaching Assistant · General Chemistry",
     description:
-      "Led discussion and problem-solving sessions, designed weekly assignments, and assisted with assessment for a course of approximately 200 students.",
+      "Led discussion and problem-solving sessions for 30 students, designed and graded weekly assignments, and assisted with assessment for a course of approximately 200 students.",
   },
 ];
 
@@ -548,7 +548,7 @@ function App() {
 
           <footer>
             <span>© 2026 Yifei Jiang</span>
-            <span>Updated September 2026</span>
+            <span>Updated November 2026</span>
             <a href="#top">Back to top</a>
           </footer>
         </main>
