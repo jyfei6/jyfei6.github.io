@@ -1,7 +1,7 @@
 # Yifei Jiang — Academic Homepage
 
-An English academic homepage for CS PhD applications, built as a static React
-site and configured for GitHub Pages.
+Yifei Jiang's academic homepage, built as a static React site and deployed
+through GitHub Pages.
 
 ## Edit the content
 

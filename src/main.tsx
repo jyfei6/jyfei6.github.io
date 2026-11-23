@@ -12,9 +12,7 @@ const researchProjects = [
     title: "Image2MUA",
     description:
       "An image-conditioned generative model of multi-unit activity in macaque visual cortex, combining an attention-based mixture of visual encoders, sparse MoE routing, and rectified flow matching.",
-    result:
-      "First-author research on generative modeling of visual-cortical neural responses.",
-    status: "Submitted to ICLR 2027",
+    status: "First-author manuscript under review",
   },
   {
     meta: "Computational immunology · 2023–2026",
@@ -62,7 +60,7 @@ const researchExperience = [
     organization: "SiClink",
     role: "Algorithm Engineer · Shanghai, China",
     description:
-      "Analyze neural signals recorded with flexible electrodes for invasive brain–computer interfaces. Lead visual-cortex experiments in mice and macaques, jointly modeling multichannel neural recordings to reconstruct visual stimuli and encode visual inputs into electrical stimulation patterns.",
+      "Analyze neural recordings from flexible electrodes and lead visual cortex experiments in mice and macaques. Model spikes, SBP, MUA, and LFP for visual stimulus reconstruction and for mapping visual inputs to electrical stimulation patterns.",
   },
   {
     dates: "2023–2026",
@@ -94,7 +92,7 @@ const publications = [
     title:
       "Image2MUA: Image-Conditioned Generative Modeling of MUA with Visual-Expert Routing",
     authors: "Yifei Jiang, M. Xu, S. Ma, and F. He",
-    note: "Submitted to ICLR 2027",
+    note: "Manuscript under review",
   },
   {
     year: "2026",
@@ -110,6 +108,7 @@ const publications = [
     title:
       "Synthetic Immunological Niche Reveals Early Immune Dysregulation and Stratifies Therapeutic Response in Type 1 Diabetes",
     authors: "J. Roy, Yifei Jiang, et al.",
+    note: "e206433",
     href: "https://doi.org/10.1172/JCI206433",
   },
   {
@@ -118,6 +117,7 @@ const publications = [
     title:
       "Immune Biomarkers of Islet Transplant Rejection Revealed by Synthetic Immunological Niche",
     authors: "J. Roy, A. J. Nejma, M. Tarique, A. Talekar, S. Wu, B. Ha, Yifei Jiang, E. S. Yolcu, and L. D. Shea",
+    note: "e78154",
     href: "https://doi.org/10.1002/advs.78154",
   },
   {
@@ -262,14 +262,11 @@ function App() {
           </div>
 
           <div className="profile-copy">
-            <p className="eyebrow">Algorithm Researcher</p>
+            <p className="eyebrow">Algorithm Engineer</p>
             <h1>
               <a href="#top">Yifei Jiang</a>
             </h1>
             <p className="location">Shanghai, China</p>
-            <p className="availability">
-              Prospective PhD applicant in computer science
-            </p>
             <a className="email-link" href="mailto:jyfei@umich.edu">
               jyfei@umich.edu
             </a>
@@ -309,16 +306,14 @@ function App() {
           <section className="hero" aria-label="About Yifei Jiang">
             <div className="intro-copy">
               <p>
-                I am an algorithm engineer and researcher with undergraduate
-                degrees in Electrical and Computer Engineering and Biomedical
-                Engineering. I hold a Bachelor of Engineering from Shanghai
-                Jiao Tong University and a Bachelor of Science in Engineering
-                from the University of Michigan.
+                I am an algorithm engineer at SiClink, where I work on
+                neural modeling for visual brain–computer interfaces.
               </p>
               <p>
-                My work focuses on generative models, deep learning, and machine
-                learning across a range of scientific domains. I am seeking
-                opportunities to pursue a PhD in computer science.
+                I hold a Bachelor of Engineering in Electrical and Computer
+                Engineering from Shanghai Jiao Tong University and a Bachelor
+                of Science in Engineering in Biomedical Engineering from the
+                University of Michigan.
               </p>
             </div>
             <p className="research-interests">
@@ -380,10 +375,7 @@ function App() {
           </section>
 
           <section className="content-section" id="experience">
-            <SectionHeader
-              title="Research experience"
-              note="Research and engineering appointments, in reverse chronological order."
-            />
+            <SectionHeader title="Research and engineering experience" />
 
             <div className="experience-list">
               {researchExperience.map((item) => (
@@ -536,9 +528,8 @@ function App() {
             <SectionHeader title="Contact" />
             <div className="contact-row">
               <p>
-                I am seeking PhD opportunities in computer science and welcome
-                correspondence about generative modeling, neural computation,
-                and machine learning for science.
+                I welcome correspondence about generative modeling, neural
+                computation, and machine learning for science.
               </p>
               <a className="text-link" href="mailto:jyfei@umich.edu">
                 Email <span aria-hidden="true">↗</span>
